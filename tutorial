@@ -1,0 +1,23 @@
+* Syntax of this document *
+- Precede shell commands with <tab>$, like so:
+	$
+- Place blank lines between beginning/end of content and headers. 
+- Encapsulate headers with '*'.
+- Precede theme code with <tab>, like so:
+	default_color = "-1";
+- Place comments inline with theme code, like so:
+	# set the default foreground color
+	default_color = "-1";
+- Any questions - just ask on #irssi.
+* End syntax of this document*
+
+* Initialising files *
+Before doing anything, we need to create our own theme file.
+	$ mkdir ~/.irssi # may not be necessary
+	$ cp ./default.theme ~/.irssi/default.theme # default.theme is located the directory containing this document
+	$ cp ~/.irssi/default.theme ~/.irssi/custom.theme
+For the purposes of this document, our theme is called 'custom.theme.'
+* End initialising files *
+  
+
+
