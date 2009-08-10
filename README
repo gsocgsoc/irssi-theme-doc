@@ -1,0 +1,23 @@
+irssi theme documentation
+<http://irssi.org>
+
+* ABOUT
+
+Irssi has many features, prominent of which is the ability to customise it.
+Unfortunately, creating a theme can be difficult without trial and error and/or
+a large time investment.
+
+The purpose of this project is to document the theme creating process to save
+the end-user some hassle and time.
+
+* FILES
+
+README - the file you are reading
+default.theme - the default theme shipped with irssi
+
+* COMPATIBILITY
+
+This document was designed for irssi versions 0.8.13 - 0.8.14 in mind. Older
+versions (and newer ones) may work but YMMV.
+
+% vim: tw=80
