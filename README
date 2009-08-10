@@ -14,6 +14,7 @@ the end-user some hassle and time.
 
 README - the file you are reading
 default.theme - the default theme shipped with irssi
+colorless.theme - a colourless version of default.theme
 
 * COMPATIBILITY
 
