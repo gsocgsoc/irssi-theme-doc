@@ -1,5 +1,6 @@
 #+TITLE: irssi theme documentation
 
+* TODO Purpose of this document
 * Syntax of this document
 - Precede shell commands with <tab>$:
 #+BEGIN_SRC bash
@@ -25,5 +26,46 @@ Before doing anything, we need to create our own theme file.
 	$ cp ~/.irssi/default.theme ~/.irssi/custom.theme
 #+END_SRC bash
 For the purposes of this document, our theme is called 'custom.theme.'
+* Terminology
+To make managing irssi themes easier, customising was split into two
+components: *themes* and *templates*.
 
+Use *templates* to change the wording of irssi messages, for example, chanmode_change.
+Use *themes* to change colors and the formating of these strings (in a printf style).
 
+* Formatting
+** Color
+Copied and beautified from the irssi [[http://irssi.org/documentation/formats][format documentation]].
+
+These colors are dependent on your terminal's/console's color scheme and are not set by irssi.
+
+|    |    |    | *text*  | *alt text*   | *background* |
+| %k | %K | %0 | black   | dark grey    | black      |
+| %r | %R | %1 | red     | bold red     | red        |
+| %g | %G | %2 | green   | bold green   | green      |
+| %y | %Y | %3 | yellow  | bold yellow  | yellow     |
+| %b | %B | %4 | blue    | bold blue    | blue       |
+| %m | %M | %5 | magenta | bold magenta | magenta    |
+| %p | %P |    | purple  | bold purple  |            |
+| %c | %C | %6 | cyan    | bold cyan    | cyan       |
+| %w | %W | %7 | white   | bold white   | white      | 
+
+'%n' and '%N' are special cases. When used in themes, '%n' reverts to
+the previous color - otherwise it is the terminal color. '%N' on the
+other hand, is always the terminal's default color.
+** Formats  
+Use twice for on/off
+
+| %F     | blinking                            |
+| %U     | underline                           |
+| %8     | reverse                             |
+| %9     | bold                                |
+| %:     | insert newline[fn::what does %_ do] |
+| %\vert | marks indentation position          |
+| %#     | monospace font                      |
+| %%     | a single %                          |
+		     
+		     
+		     
+* scratch
+[fn::Some footnote]
